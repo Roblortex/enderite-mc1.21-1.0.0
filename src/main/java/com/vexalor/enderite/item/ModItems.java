@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item ENDERITE_SCRAPS = registerItem("enderite_scraps", new Item(new Item.Settings()));
+    public static final Item ENDERITE_INGOT = registerItem("enderite_ingot", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -19,8 +20,9 @@ public class ModItems {
     public static void registerModItems() {
         Enderite.LOGGER.info("Registering Mod Items for " + Enderite.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(ENDERITE_SCRAPS);
+            entries.add(ENDERITE_INGOT);
         });
     }
 }
