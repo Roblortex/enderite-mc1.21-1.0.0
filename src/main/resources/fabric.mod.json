@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "enderite",
+	"version": "${version}",
+	"name": "Enderite",
+	"description": "adds a version of netherite in the end",
+	"authors": [
+		"Vexalor"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@Spiky037",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/enderite/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.vexalor.enderite.Enderite"
+		],
+		"fabric-datagen": [
+			"com.vexalor.enderite.EnderiteDataGenerator"
+		],
+		"client": [
+			"com.vexalor.enderite.EnderiteClient"
+		]
+	},
+	"mixins": [
+		"enderite.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
