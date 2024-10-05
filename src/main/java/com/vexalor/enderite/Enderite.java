@@ -1,5 +1,7 @@
 package com.vexalor.enderite;
 
+import com.vexalor.enderite.block.ModBlocks;
+import com.vexalor.enderite.item.ModItemGroups;
 import com.vexalor.enderite.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,6 +14,9 @@ public class Enderite implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

@@ -1,4 +1,8 @@
 {
-  "item.enderite.enderite_scraps": "Enderite Scraps",
-  "item.enderite.enderite_ingot": "Enderite Ingot"
+  "item.enderite.enderite_scraps": "Enderite Scrap",
+  "item.enderite.enderite_ingot": "Enderite Ingot",
+
+  "block.enderite.enderite_block": "Block of Enderite",
+  "block.enderite.enderite_ore": "Enderite Ore",
+  "itemgroup.enderite.enderite_items": "Enderite Mod"
 }
